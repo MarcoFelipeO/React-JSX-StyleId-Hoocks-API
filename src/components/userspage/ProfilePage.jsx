@@ -20,23 +20,25 @@ function ProfilePage() {
     };
 
     return (
-        <div className="profile-page-container">
-            <h2>Información del perfil</h2>
-            <p>Nombre: {profileInfo.name}</p>
-            <p>Email: {profileInfo.email}</p>
-            <p>Ciudad: {profileInfo.city}</p>
-            {profileInfo.role === "ADMIN" && (
-                <>
+        <div className="background-image">
+            <div className="profile-page-container">
+                <h2>Información del perfil</h2>
+                <p>Nombre: {profileInfo.name}</p>
+                <p>Email: {profileInfo.email}</p>
+                <p>Ciudad: {profileInfo.city}</p>
+                {profileInfo.role === "ADMIN" && (
+                    <>
+                        
+                            <Link to={`/update-user/${profileInfo.id}`} className='btn btn-primary'>
+                                    Actualizar este perfil 
+                            </Link>
+                        
+                        
+                            <Link to="/admin/user-management" className='btn btn-danger'>Apartado administrador</Link>
                     
-                        <Link to={`/update-user/${profileInfo.id}`} className='btn btn-primary'>
-                                Actualizar este perfil 
-                        </Link>
-                    
-                    
-                        <Link to="/admin/user-management" className='btn btn-danger'>Apartado administrador</Link>
-                   
-                </>
-            )}
+                    </>
+                )}
+            </div>
         </div>
     );
 }
