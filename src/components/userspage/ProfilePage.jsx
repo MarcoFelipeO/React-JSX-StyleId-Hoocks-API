@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import UserService from '../service/UserService';
 import { Link } from 'react-router-dom';
+import { AdminSectionButton, ButtonContainer, ProfilePageContainer, UpdateProfileButton } from '../../StylesId/ProfilePageStyles';
 
 function ProfilePage() {
     const [profileInfo, setProfileInfo] = useState({});
@@ -21,24 +22,22 @@ function ProfilePage() {
 
     return (
         <div className="background-image">
-            <div className="profile-page-container">
-                <h2>Información del perfil</h2>
-                <p>Nombre: {profileInfo.name}</p>
-                <p>Email: {profileInfo.email}</p>
-                <p>Ciudad: {profileInfo.city}</p>
-                {profileInfo.role === "ADMIN" && (
-                    <>
-                        
-                            <Link to={`/update-user/${profileInfo.id}`} className='btn btn-primary'>
-                                    Actualizar este perfil 
-                            </Link>
-                        
-                        
-                            <Link to="/admin/user-management" className='btn btn-danger'>Apartado administrador</Link>
-                    
-                    </>
-                )}
-            </div>
+             <ProfilePageContainer>
+            <h2>Información del perfil</h2>
+            <p>Nombre: {profileInfo.name}</p>
+            <p>Email: {profileInfo.email}</p>
+            <p>Ciudad: {profileInfo.city}</p>
+            {profileInfo.role === "ADMIN" && (
+                <ButtonContainer>
+                    <Link className='btn btn-primary' to={`/update-user/${profileInfo.id}`} component={UpdateProfileButton}>
+                        Actualizar este perfil
+                    </Link>
+                    <Link className='btn btn-danger' to="/admin/user-management" component={AdminSectionButton}>
+                        Apartado administrador
+                    </Link>
+                </ButtonContainer>
+            )}
+        </ProfilePageContainer>
         </div>
     );
 }

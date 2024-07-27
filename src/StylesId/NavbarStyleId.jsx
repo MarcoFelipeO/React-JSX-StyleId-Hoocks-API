@@ -16,9 +16,7 @@ export const NavbarStyleId = styled.nav`
     border-color: transparent;
   }
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,..."); /* Aquí puedes personalizar el ícono del toggle si lo deseas */
-  }
+  
 
   .navbar-nav .nav-link {
     color: white;

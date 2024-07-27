@@ -34,6 +34,7 @@ function UserManagementPage() {
   };
 
   return (
+    <div className="background-image">
     <UserManagementStyleId>
       <div className="user-management-container">
         <h2 className="mb-4">Gestión de usuarios</h2>
@@ -68,6 +69,7 @@ function UserManagementPage() {
         </div>
       </div>
     </UserManagementStyleId>
+    </div>
   );
 }
 
