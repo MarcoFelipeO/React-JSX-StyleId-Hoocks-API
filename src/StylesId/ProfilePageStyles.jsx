@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfilePageContainer = styled.div`
-  background: #e5e1e1; /* Fondo blanco para destacar el contenido */
+  background: #d7d1d1; /* Fondo blanco para destacar el contenido */
   padding: 40px; /* Espacio interno */
   border-radius: 8px;
   width: 700px;
