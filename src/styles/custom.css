@@ -1,0 +1,85 @@
+
+/* src/styles/custom.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background-image {
+    background-image: url('/../../DESARROLLO/frontend/src/images/foto3.jpg'); /* Ruta relativa desde la carpeta public */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegúrate de que el contenedor tenga al menos la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+.container-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* src/styles/custom.css */
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+/* src/styles/custom.css */
+.custom-button {
+    padding: 5px 10px; /* Ajusta el padding para que el botón sea más delgado */
+    margin-right: 8px; /* Añade un margen a la derecha del botón */
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.ms-2 {
+    margin-left: 8px; /* Bootstrap clase para margen izquierdo */
+}
+
+.navbar-nav .nav-item.d-flex.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+/* ICONOS GITHUB */
+.github-icon {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.github-icon:hover {
+    color: white; /* Mantén el color blanco incluso en el hover */
+}
+/* ICONOS GITHUB  */
+
+/* LOGIN*/
+.auth-container {
+    width: 400px; /* Ajusta el valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: red;
+}
+/* LOGIN*/
