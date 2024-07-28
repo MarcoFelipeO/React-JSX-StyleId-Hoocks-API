@@ -43,3 +43,7 @@ export const AdminSectionButton = styled.a`
     background-color: #c82333;
   }
 `;
+
+export const Textos =styled.a`
+  color: #ff5733;
+`;
