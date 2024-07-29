@@ -9,7 +9,7 @@ export const AuthContainer = styled.div`
   height: auto; /* Permite que el contenedor tenga altura automática en función del contenido */
   max-width: 1000px; /* Aumenta el ancho máximo del contenedor */
   margin: 100px auto; /* Ajusta el margen superior para mover el contenedor hacia abajo y centrarlo horizontalmente */
-  background: #f4f4f4;
+  background: #d7d1d1;
   padding: 50px; /* Aumenta el padding para hacer el contenedor más grande en su interior */
   border-radius: 12px; /* Ajusta el radio de borde para un redondeo más suave */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta el tamaño de la sombra para mayor definición */
