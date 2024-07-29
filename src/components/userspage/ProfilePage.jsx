@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import UserService from '../service/UserService';
 import { Link } from 'react-router-dom';
-import { AdminSectionButton, ButtonContainer, ProfilePageContainer, UpdateProfileButton, Textos } from '../../StylesId/ProfilePageStyles';
+import { AdminSectionButton, ButtonContainer, ProfilePageContainer, UpdateProfileButton } from '../../StylesId/ProfilePageStyles';
 
 function ProfilePage() {
     const [profileInfo, setProfileInfo] = useState({});
@@ -23,8 +23,8 @@ function ProfilePage() {
     return (
         <div className="background-image">
             <ProfilePageContainer>
-                <Textos>Información del perfil</Textos>
-                <p>Nombre: {profileInfo.name}</p>
+                <h2 className='font-weight-bold text-muted display-5'>Información del perfil</h2><br/>
+                <p className=''>Nombre: {profileInfo.name}</p>
                 <p>Email: {profileInfo.email}</p>
                 <p>Ciudad: {profileInfo.city}</p>
                 {profileInfo.role === "ADMIN" && (

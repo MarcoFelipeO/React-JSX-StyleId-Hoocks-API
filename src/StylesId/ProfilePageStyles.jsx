@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const ProfilePageContainer = styled.div`
   background: #d7d1d1; /* Fondo blanco para destacar el contenido */
   padding: 40px; /* Espacio interno */
-  border-radius: 8px;
+  border-radius: 18px;
   width: 700px;
   max-width: 800px; /* Ancho máximo del contenedor */
-  margin: 40px auto; /* Mueve el contenedor hacia abajo y lo centra */
+  margin: 60px auto; /* Mueve el contenedor hacia abajo y lo centra */
 `;
 
 export const ButtonContainer = styled.div`
@@ -44,6 +44,4 @@ export const AdminSectionButton = styled.a`
   }
 `;
 
-export const Textos =styled.a`
-  color: #ff5733;
-`;
+

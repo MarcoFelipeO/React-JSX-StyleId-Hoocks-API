@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UserService from "../service/UserService";
+import { AuthContainer, ErrorMessage, FormGroup, Input, SubmitButton } from "../../StylesId/LoginStyleId";
 
 
 function LoginPage() {
@@ -36,20 +37,32 @@ function LoginPage() {
 
 
   return (
-    <div className="auth-container">
-      <h2>Login</h2>
-      {error && <p className="error-message">{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Email: </label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div className="form-group">
-          <label>Contraseña: </label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button type="submit">Login</button>
-      </form>
+    <div className="background-image">
+      <AuthContainer>
+        <h2>Login</h2>
+        {error && <ErrorMessage>{error}</ErrorMessage>}
+        <form onSubmit={handleSubmit}>
+          <FormGroup>
+            <label>Email:</label>
+            <Input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+            />
+          </FormGroup>
+          <FormGroup>
+            <label>Contraseña:</label>
+            <Input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+            />
+          </FormGroup>
+          <SubmitButton type="submit">Login</SubmitButton>
+        </form>
+      </AuthContainer>
     </div>
   )
 

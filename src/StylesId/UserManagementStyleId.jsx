@@ -13,6 +13,8 @@ export const UserManagementStyleId = styled.div`
   .table {
     background-color: #fff;
     border-radius: 0.5rem;
+    width:700px;
+    hight:900px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   }
 

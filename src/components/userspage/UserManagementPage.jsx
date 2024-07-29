@@ -37,11 +37,11 @@ function UserManagementPage() {
     <div className="background-image">
     <UserManagementStyleId>
       <div className="user-management-container">
-        <h2 className="mb-4 text-white">Gestión de usuarios</h2>
-        <Link to="/admin/register" className="btn btn-primary mb-3">Agregar Usuario</Link>
+        <h2 className="mb-6 text-white">Gestión de usuarios</h2>
+        <Link to="/admin/register" className="btn btn-primary mb-2">Agregar Usuario</Link>
 
         <div className="table-responsive">
-          <table className="table table-striped mb-4">
+          <table className="table table-striped mb-6">
             <thead className="thead-dark">
               <tr>
                 <th>ID</th>
