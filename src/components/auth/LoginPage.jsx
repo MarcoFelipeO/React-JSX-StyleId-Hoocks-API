@@ -60,7 +60,7 @@ function LoginPage() {
               placeholder="Enter your password"
             />
           </FormGroup>
-          <SubmitButton type="submit">Login</SubmitButton>
+          <SubmitButton type="submit">Login </SubmitButton>
         </form>
       </AuthContainer>
     </div>
